@@ -1,0 +1,11 @@
+site_name: Product Service
+site_description: Product inventory microservice using Redis
+
+nav:
+  - Overview: index.md
+  - Architecture: architecture.md
+  - API Reference: api.md
+  - Configuration: configuration.md
+
+plugins:
+  - techdocs-core
