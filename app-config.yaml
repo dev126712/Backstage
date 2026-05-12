@@ -120,11 +120,11 @@ catalog:
       rules:
         - allow: [system]
     - type: file
-      target:
+      target: https://github.com/dev126712/Backstage/blob/main/apis/order/order-service-api.yml
       rules:
         - allow: [Component]
     - type: file
-      target:
+      target: https://github.com/dev126712/Backstage/blob/main/apis/product/product-service-api.yml
       rules:
         - allow: [Component]
 
