@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: ecommerce-platform
+  description: Microservices behind the nginx gateway
+spec:
+  owner: group:devops
