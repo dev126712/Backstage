@@ -1,13 +1,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: back-app
-  description: An example of a Backstage application.
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  name: order-service
+  description: order inventory microservice
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/dev126712/Backstage/tree/main/docs/order-service
 spec:
-  type: website
-  owner: john@example.com
-  lifecycle: experimental
+  type: service
+  lifecycle: development
+  owner: group:devops
+  system: ecommerce-platform
+  providesApis:
+    - product-service
