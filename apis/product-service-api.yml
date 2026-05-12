@@ -22,4 +22,79 @@ spec:
           summary: Get all products
           responses:
             '200':
-              description: OK
+              description: List of all products from Redis
+        post:
+          summary: Create a product
+          requestBody:
+            required: true
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    price:
+                      type: number
+          responses:
+            '201':
+              description: Product created
+      /{id}:
+        get:
+          summary: Get product by ID (cache-aside)
+          parameters:
+            - in: path
+              name: id
+              required: true
+              schema:
+                type: string
+          responses:
+            '200':
+              description: Product found (from cache or main store)
+              content:
+                application/json:
+                  schema:
+                    type: object
+                    properties:
+                      source:
+                        type: string
+                        enum: [cache, main_store]
+                      data:
+                        type: object
+            '404':
+              description: Product not found
+        put:
+          summary: Update a product
+          parameters:
+            - in: path
+              name: id
+              required: true
+              schema:
+                type: string
+          requestBody:
+            required: true
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    price:
+                      type: number
+          responses:
+            '200':
+              description: Product updated, cache invalidated
+        delete:
+          summary: Delete a product
+          parameters:
+            - in: path
+              name: id
+              required: true
+              schema:
+                type: string
+          responses:
+            '200':
+              description: Product deleted
+            '404':
+              description: Product not found
