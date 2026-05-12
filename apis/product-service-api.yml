@@ -9,6 +9,7 @@ spec:
   type: openapi
   lifecycle: development
   owner: group:devops
+  system: microservice-app
   definition: |
     openapi: "3.0.0"
     info:
