@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: order-service
+  description: Handles order management
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: openapi
+  lifecycle: development
+  owner: group:devops
+  definition: |
+    openapi: "3.0.0"
+    info:
+      title: Order Service API
+      version: "1.0"
+    servers:
+      - url: http://localhost:8080/api/orders
+    paths:
+      /:
+        get:
+          summary: Get all orders
+          responses:
+            '200':
+              description: OK
