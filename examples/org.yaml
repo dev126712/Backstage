@@ -1,0 +1,129 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: devops
+spec:
+  type: team
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: dev126712
+spec:
+  profile:
+    displayName: dev126712
+    email: email@example.cpm
+    picture: https://github.com/dev126712.png
+  memberOf: [devops]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: Blackbeard
+spec:
+  profile:
+    displayName: Blackbeard
+    email: email@example.cpm
+    picture: https://github.com/dev126712.png
+  memberOf: [CloudEngineer]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: Jean Claude
+spec:
+  profile:
+    displayName: Jean Claude
+    email: email1@example.cpm
+    picture: https://github.com/dev126712.png
+  memberOf: [PlatformEngineer]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: Bruce Wayne
+spec:
+  profile:
+    displayName: Bruce Wayne
+    email: email@example.cpm
+    picture: https://github.com/dev126712.png
+  memberOf: [Developper]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: Luffy
+spec:
+  profile:
+    displayName: Luffy
+    email: email@example.cpm
+    picture: https://github.com/dev126712.png
+  memberOf: [PlatformEngineer]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: Torreto
+spec:
+  profile:
+    displayName: Torreto
+    email: email@example.cpm
+    picture: https://github.com/dev126712.png
+  memberOf: [Administrator]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: Zoro
+spec:
+  profile:
+    displayName: Zoro
+    email: email@example.cpm
+    picture: https://github.com/dev126712.png
+  memberOf: [Juniordevelopper]
+---
+
+
+
+
+
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: CloudEngineer
+spec:
+  type: team
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: PlatformEngineer
+spec:
+  type: team
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Developper
+spec:
+  type: team
+  children: [Juniordevelopper]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Juniordevelopper
+spec:
+  type: team
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Administrator
+spec:
+  type: team
+  children: []
