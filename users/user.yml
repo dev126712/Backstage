@@ -1,0 +1,22 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: Blackbeardfromgit
+spec:
+  profile:
+    displayName: Blackbeardfromgii
+    email: email@example.cpm
+    picture: https://github.com/dev126712.png
+  memberOf: [CloudEngineer]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: JeanClaudefromgit
+spec:
+  profile:
+    displayName: JeanClaudefromgit
+    email: email1@example.cpm
+    picture: https://github.com/dev126712.png
+  memberOf: [PlatformEngineer]
