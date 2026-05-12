@@ -4,7 +4,7 @@ metadata:
   name: backstage
   description: backstage.io
   annotations:
-    github.com/project-slug: 'backstage/backstage'
+    github.com/project-slug: 'dev126712/microservices-app'
 spec:
   type: website
   lifecycle: development
