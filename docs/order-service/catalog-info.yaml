@@ -11,4 +11,4 @@ spec:
   owner: group:devops
   system: ecommerce-platform
   providesApis:
-    - product-service
+    - order-service
