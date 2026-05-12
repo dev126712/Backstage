@@ -1,0 +1,39 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: CloudEngineer
+spec:
+  type: team
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: PlatformEngineer
+spec:
+  type: team
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Developper
+spec:
+  type: team
+  children: [Juniordevelopper]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Juniordevelopper
+spec:
+  type: team
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Administrator
+spec:
+  type: team
+  children: []
