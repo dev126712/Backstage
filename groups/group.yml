@@ -1,6 +1,15 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
+  name: Devops
+spec:
+  type: team
+  children: []
+---
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
   name: CloudEngineer
 spec:
   type: team
