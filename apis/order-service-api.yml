@@ -22,4 +22,55 @@ spec:
           summary: Get all orders
           responses:
             '200':
-              description: OK
+              description: List of all orders from PostgreSQL
+              content:
+                application/json:
+                  schema:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                        product_id:
+                          type: string
+                        product_name:
+                          type: string
+                        status:
+                          type: string
+                          enum: [PLACED]
+        post:
+          summary: Place a new order
+          description: Verifies product exists, saves order, triggers notification
+          requestBody:
+            required: true
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    product_id:
+                      type: string
+          responses:
+            '201':
+              description: Order placed successfully
+            '404':
+              description: Product not found in inventory
+            '503':
+              description: Product service unavailable
+      /stats:
+        get:
+          summary: Get order and product stats
+          description: Returns order count from PostgreSQL and product count from Redis
+          responses:
+            '200':
+              description: Stats retrieved
+              content:
+                application/json:
+                  schema:
+                    type: object
+                    properties:
+                      postgres_orders:
+                        type: integer
+                      redis_products:
+                        type: integer
