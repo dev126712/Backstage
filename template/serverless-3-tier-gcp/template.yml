@@ -45,12 +45,12 @@ spec:
           name: ${{ parameters.name }}
           repoUrl: ${{ parameters.repoUrl }} 
 
-    # - id: fetchDocs
-    #   name: Fetch Docs
-    #   action: fetch:plain
-    #   input:
-    #     targetPath: ./README.md
-    #     url: https://github.com/dev126712/terraform-modules/blob/main/serverless-3-Tier/README.md
+    - id: fetchCI
+      name: Fetch CI GitHub Action
+      action: fetch:plain
+      input:
+        targetPath: ./.github/workflows
+        url: https://github.com/dev126712/Backstage/blob/main/template/serverless-3-tier-gcp/skeleton/.github/workflows/terraform-ci.yml
 
     - id: publish
       name: Publish
