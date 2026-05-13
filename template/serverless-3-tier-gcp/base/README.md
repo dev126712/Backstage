@@ -1,3 +1,5 @@
+${{ values.name }}
+
 #### Serverless 3-Tier Architecture on Google Cloud (GCP)
 A production-ready, highly scalable 3-tier web architecture deployed using Terraform. This project demonstrates advanced infrastructure-as-code (IaC) patterns, including global load balancing, private networking, and automated secret management.
 
