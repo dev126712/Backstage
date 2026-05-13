@@ -49,16 +49,10 @@ spec:
       name: Fetch CI main.tf module
       action: fetch:plain
       input:
-        targetPath: ./main.tf
+        targetPath: ./
         url: https://github.com/dev126712/Backstage/blob/main/template/serverless-3-tier-gcp/skeleton
 
 
-    - id: fetchCI
-      name: Fetch CI GitHub Action
-      action: fetch:plain
-      input:
-        targetPath: ./.github/workflows
-        url: https://github.com/dev126712/Backstage/blob/main/template/serverless-3-tier-gcp/skeleton/.github/workflows
 
     - id: publish
       name: Publish
