@@ -39,7 +39,24 @@ spec:
           title: GCP Project ID
           type: string
           description: The ID of the project to deploy to.
-
+    - title: Deployment Location
+      required:
+        - cloud_run_region
+      properties:
+        cloud_run_region:
+          title: Cloud Run Region
+          type: string
+          description: Which GCP region should this service be deployed to?
+          # This creates the multiple-choice dropdown
+          enum:
+            - us-central1
+            - europe-west1
+            - asia-east1
+          enumNames:
+            - "Iowa (us-central1)"
+            - "Belgium (europe-west1)"
+            - "Taiwan (asia-east1)"
+          default: us-central1
   # here's the steps that are executed in series in the scaffolder backend
   steps:
     - id: fetchBase
