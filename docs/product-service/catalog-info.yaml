@@ -9,6 +9,6 @@ spec:
   type: service
   lifecycle: development
   owner: group:devops
-  system: ecommerce-platform
+  system: microservice-app
   providesApis:
     - product-service
