@@ -33,6 +33,12 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
+    - title: Project Settings
+      properties:
+        gcp_project_id:
+          title: GCP Project ID
+          type: string
+          description: The ID of the project to deploy to.
 
   # here's the steps that are executed in series in the scaffolder backend
   steps:
