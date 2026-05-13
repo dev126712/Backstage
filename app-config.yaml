@@ -139,6 +139,10 @@ catalog:
       target: https://github.com/dev126712/Backstage/blob/main/test-template.yml
       rules:
         - allow: [Template]
+    - type: url
+      target: https://github.com/dev126712/Backstage/blob/main/template/serverless-3-tier-gcp/template.yml
+      rules:
+        - allow: [Template]
 
 kubernetes:
   # see https://backstage.io/docs/features/kubernetes/configuration for kubernetes configuration options
