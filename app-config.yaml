@@ -135,6 +135,10 @@ catalog:
       target: https://github.com/dev126712/Backstage/blob/main/plugins/github-action.yml
       rules:
         - allow: [Component]
+    - type: url
+      target: https://github.com/dev126712/Backstage/blob/main/templates/test-template.yml
+      rules:
+        - allow: [Template]
 
 kubernetes:
   # see https://backstage.io/docs/features/kubernetes/configuration for kubernetes configuration options
