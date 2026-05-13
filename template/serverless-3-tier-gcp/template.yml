@@ -40,7 +40,7 @@ spec:
       name: Fetch Base
       action: fetch:template
       input:
-        url: ./template/serverless-3-tier-gcp
+        url: ../../template
         values:
           name: ${{ parameters.name }}
           repoUrl: ${{ parameters.repoUrl }} 
