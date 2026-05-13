@@ -50,7 +50,7 @@ spec:
       action: fetch:plain
       input:
         targetPath: ./.github/workflows
-        url: https://github.com/dev126712/Backstage/blob/main/template/serverless-3-tier-gcp/skeleton/.github/workflows/terraform-ci.yml
+        url: https://github.com/dev126712/Backstage/blob/main/template/serverless-3-tier-gcp/skeleton/.github/workflows
 
     - id: publish
       name: Publish
