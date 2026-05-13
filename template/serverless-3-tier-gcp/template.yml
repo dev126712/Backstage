@@ -35,7 +35,7 @@ spec:
               - github.com
     - title: Project Settings
       properties:
-        gcp_project_id:
+        project_id:
           title: GCP Project ID
           type: string
           description: The ID of the project to deploy to.
