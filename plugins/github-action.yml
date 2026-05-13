@@ -7,5 +7,6 @@ metadata:
     github.com/project-slug: 'dev126712/microservices-app'
 spec:
   type: website
+  system: microservice-app
   lifecycle: development
   owner: devops
