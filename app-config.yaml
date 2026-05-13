@@ -136,7 +136,7 @@ catalog:
       rules:
         - allow: [Component]
     - type: url
-      target: https://github.com/dev126712/Backstage/blob/main/template/template.yaml
+      target: https://github.com/dev126712/Backstage/blob/main/test-template.yml
       rules:
         - allow: [Template]
 
