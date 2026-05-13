@@ -9,4 +9,4 @@ metadata:
 spec:
   type: service
   lifecycle: development
-  owner: devops:dev126712
+  owner: dev126712
