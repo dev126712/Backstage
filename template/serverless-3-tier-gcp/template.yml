@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 # some metadata about the template itself
 metadata:
-  name: v1beta3-demo
+  name: serverless-demo
   title: Serverless 3 Tier Application GCP
   description: Serverless 3 tier Application on gcp with Cloud Run V2 for Frontend & Backend and Cloud SQL (PostgreSQL 15) for Database
 spec:
