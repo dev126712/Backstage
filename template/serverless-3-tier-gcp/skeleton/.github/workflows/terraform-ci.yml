@@ -19,6 +19,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+# Required for GCP - Use Workload Identity Federation for security
+      - id: 'auth'
+        name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v2'
+        with:
+          project_id: 'project-test-490416'
+          # workload_identity_provider: 'projects/1234567/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
+
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
