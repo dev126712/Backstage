@@ -2,6 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: dev126712
+  annotations:
+    backstage.io/techdocs-ref: value
 spec:
   profile:
     displayName: dev126712
@@ -13,6 +15,8 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: Blackbeard
+  annotations:
+    backstage.io/techdocs-ref: value
 spec:
   profile:
     displayName: Blackbeard
@@ -24,6 +28,8 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: JeanClaude
+  annotations:
+    backstage.io/techdocs-ref: value
 spec:
   profile:
     displayName: Jean Claude
@@ -35,6 +41,8 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: BruceWayne
+  annotations:
+    backstage.io/techdocs-ref: value
 spec:
   profile:
     displayName: Bruce Wayne
@@ -46,6 +54,8 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: Luffy
+  annotations:
+    backstage.io/techdocs-ref: value
 spec:
   profile:
     displayName: Luffy
@@ -57,6 +67,8 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: Torreto
+  annotations:
+    backstage.io/techdocs-ref: value
 spec:
   profile:
     displayName: Torreto
@@ -68,6 +80,8 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: Zoro
+  annotations:
+    backstage.io/techdocs-ref: value
 spec:
   profile:
     displayName: Zoro
