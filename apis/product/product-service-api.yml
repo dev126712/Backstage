@@ -8,7 +8,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: development
-  owner: group:devops
+  owner: group:Developper
   system: microservice-app
   definition: |
     openapi: "3.0.0"
