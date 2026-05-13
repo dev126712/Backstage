@@ -52,6 +52,13 @@ spec:
         targetPath: ./community
         url: https://github.com/backstage/community/tree/main/backstage-community-sessions
 
+    - id: fetchCI
+      name: Fetch CI GitHub Action
+      action: fetch:plain
+      input:
+        targetPath: ./.github/workflows
+        url: https://github.com/dev126712/three-tier-architecture-deployment/tree/main/.github/workflows
+
     - id: publish
       name: Publish
       action: publish:github
