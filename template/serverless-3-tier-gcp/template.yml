@@ -5,7 +5,7 @@ metadata:
   title: Serverless 3 Tier Application GCP
   description: Serverless 3 tier Application on gcp with Cloud Run V2 for Frontend and Backend & Cloud SQL for Database
 spec:
-  owner: group:platform
+  owner: group:PlatformEngineer
   type: service
 
   # these are the steps which are rendered in the frontend with the form input
