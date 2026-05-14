@@ -19,7 +19,7 @@ spec:
         name:
           title: Name
           type: string
-          description: Unique name of the component
+          description: "Unique name of the component, expected a string that is sequences of [a-zA-Z0-9] separated by any of [-_.]"
           ui:autofocus: true
           ui:options:
             rows: 5
