@@ -39,15 +39,10 @@ spec:
           title: GCP Project ID
           type: string
           description: The ID of the project to deploy to.
-    - title: Deployment Location
-      required:
-        - cloud_run_region
-      properties:
         cloud_run_region:
           title: Cloud Run Region
           type: string
           description: Which GCP region should this service be deployed to?
-          # This creates the multiple-choice dropdown
           enum:
             - us-central1
             - europe-west1
@@ -57,7 +52,29 @@ spec:
             - "Belgium (europe-west1)"
             - "Taiwan (asia-east1)"
           default: us-central1
-  # here's the steps that are executed in series in the scaffolder backend
+        frontend_container_image:
+          title: Frontend Image
+          type: string
+          description: The container frontend image
+        backend_container_image:
+          title: Backend Image
+          type: string
+          description: The container frontend image
+        database_name:
+          title: Database Name
+          type: string
+          description: The Database Name ( Default: app-db-instance )
+          default: app-db-instance
+        database_version:
+          title: Database Version
+          type: string
+          description: The Database Version ( Default: POSTGRES_15 )
+          default: POSTGRES_15
+        database_tier:
+          title: Database Tier
+          type: string
+          description: The Database Version ( Default: db-f1-micro )
+          default: db-f1-micro
   steps:
     - id: fetchBase
       name: Fetch Base
