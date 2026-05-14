@@ -101,44 +101,46 @@ catalog:
   rules:
     - allow: [Component, System, API, Resource, Location, User, Group, Template]
   locations:
-    - type: file
-      target: ../../examples/entities.yaml
     - type: url
       target: https://github.com/dev126712/Backstage/blob/main/users/user.yml
       rules:
         - allow: [User]
+    
     - type: url
       target: https://github.com/dev126712/Backstage/blob/main/groups/group.yml
       rules:
         - allow: [Group]
+    
     - type: url
       target: https://github.com/dev126712/Backstage/blob/main/apis/order/order-service-api.yml
       rules:
         - allow: [API]
+    
     - type: url
       target: https://github.com/dev126712/Backstage/blob/main/apis/product/product-service-api.yml
       rules:
         - allow: [API]
+    
     - type: url
       target: https://github.com/dev126712/Backstage/blob/main/system/api-system.yml
       rules:
         - allow: [system]
+    
     - type: url
       target: https://github.com/dev126712/Backstage/blob/main/docs/product-service/catalog-info.yaml
       rules:
         - allow: [Component]
+    
     - type: url
       target: https://github.com/dev126712/Backstage/blob/main/docs/order-service/catalog-info.yaml
       rules:
         - allow: [Component]
+    
     - type: url
       target: https://github.com/dev126712/Backstage/blob/main/plugins/github-action.yml
       rules:
         - allow: [Component]
-    - type: url
-      target: https://github.com/dev126712/Backstage/blob/main/test-template.yml
-      rules:
-        - allow: [Template]
+    
     - type: url
       target: https://github.com/dev126712/Backstage/blob/main/template/serverless-3-tier-gcp/template.yml
       rules:
