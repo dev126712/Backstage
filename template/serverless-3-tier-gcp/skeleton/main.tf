@@ -1,12 +1,12 @@
 module "cloud_run" {
   source = "git::https://github.com/dev126712/terraform-modules.git//serverless-3-Tier?ref=main"
 
-  vpc    = "serverless-app-vpc"
-  subnet = "serverless-app-subnet"
+  vpc    = "${{ values.vpc }}"
+  subnet = "${{ values.subnet }}"
   # cloud run configuration
   cloud_run_region              = "${{ values.cloud_run_region }}"
   project_id                    = "${{ values.project_id }}"
-  google_cloud_run_service_name = "test-service"
+  google_cloud_run_service_name = "${{ values.google_cloud_run_service_name }}"
 
   backend_container_image  = "${{ values.backend_container_image }}"
   frontend_container_image = "${{ values.frontend_container_image }}"
