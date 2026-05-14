@@ -6,7 +6,8 @@ metadata:
   annotations:
     github.com/project-slug: ${{ (values.repoUrl | parseRepoUrl).owner }}/${{ (values.repoUrl | parseRepoUrl).repo }}
     backstage.io/techdocs-ref: url:https://github.com/${{ (values.repoUrl | parseRepoUrl).owner }}/${{ (values.repoUrl | parseRepoUrl).repo }}/tree/main
+    backstage.io/source-location: url:https://github.com/${{ (values.repoUrl | parseRepoUrl).owner }}/${{ (values.repoUrl | parseRepoUrl).repo }}/tree/main
 spec:
   type: service
-  lifecycle: development
-  owner: dev126712
+  lifecycle: experimental
+  owner: group:PlatformEngineer
