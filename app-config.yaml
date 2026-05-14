@@ -89,9 +89,9 @@ auth:
 
 scaffolder:
   defaultAuthor:
-    name: M.C. Hammer # Defaults to `Scaffolder`
-    email: hammer@donthurtem.com # Defaults to `scaffolder@backstage.io`
-  defaultCommitMessage: "U can't touch this" # Defaults to 'Initial commit'
+    name: Alexandre St-fort`
+    email: dev126712@example.com
+  defaultCommitMessage: "First commit!! Check your GitHub Action Tab." # Defaults to 'Initial commit'
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
 
 catalog:
