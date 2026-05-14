@@ -1,16 +1,7 @@
 name: "Terraform CI"
 
 on:
-  - push:
-    branches:
-      - main
-    paths:
-      - '**.tf'
-      - '**.tfvars'
-      - '**.hcl'
-      - '.terraform.lock.hcl'
-      
-  - pull_request:
+  push:
     branches:
       - main
     paths:
