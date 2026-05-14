@@ -1,6 +1,5 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
-# some metadata about the template itself
 metadata:
   name: serverless-demo
   title: Serverless 3 Tier Application GCP
@@ -11,6 +10,8 @@ spec:
 
   # these are the steps which are rendered in the frontend with the form input
   parameters:
+
+  
     - title: Fill in some steps
       required:
         - name
@@ -22,6 +23,8 @@ spec:
           ui:autofocus: true
           ui:options:
             rows: 5
+
+            
     - title: Choose a location
       required:
         - repoUrl
@@ -33,20 +36,26 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
+
+              
     - title: Project Settings
       properties:
+      
         vpc:
           title: VPC
           type: string
           description: VPC Name
+       
         subnet:
           title: subnet
           type: string
           description: Subnet Name
+        
         project_id:
           title: GCP Project ID
           type: string
           description: The ID of the project to deploy to.
+        
         cloud_run_region:
           title: Cloud Run Region
           type: string
@@ -60,41 +69,51 @@ spec:
             - "Belgium (europe-west1)"
             - "Taiwan (asia-east1)"
           default: us-central1
+        
         google_cloud_run_service_name:
           title: Google Cloud Service Name
           type: string
           description: Cloud Run Service Name
+        
         frontend_container_image:
           title: Frontend Image
           type: string
           description: The container frontend image
           default:
+        
         backend_container_image:
           title: Backend Image
           type: string
           description: The container frontend image
           default:
+        
         database_name:
           title: Database Name
           type: string
           description: The Database Name ( Default: app-db-instance )
-          enum:
-          enumNames:
           default: app-db-instance
+        
         database_version:
           title: Database Version
           type: string
           description: The Database Version ( Default: POSTGRES_15 )
           enum:
-          enumNames:
+            - POSTGRES_15
+            - POSTGRES_14
+            - MYSQL_8_0
           default: POSTGRES_15
+        
         database_tier:
           title: Database Tier
           type: string
           description: The Database Version ( Default: db-f1-micro )
           enum:
-          enumNames:
+            - db-f1-micro
+            - db-g1-small
+            - db-custom-1-3840
           default: db-f1-micro
+
+          
   steps:
     - id: fetchBase
       name: Fetch Base
@@ -112,8 +131,17 @@ spec:
         targetPath: ./
         url: https://github.com/dev126712/Backstage/blob/main/template/serverless-3-tier-gcp/skeleton
         values:
-          cloud_run_region: ${{ parameters.cloud_run_region }}
+          name: ${{ parameters.name }}
+          vpc: ${{ parameters.vpc }}
+          subnet: ${{ parameters.subnet }}
           project_id: ${{ parameters.project_id }}
+          cloud_run_region: ${{ parameters.cloud_run_region }}
+          google_cloud_run_service_name: ${{ parameters.google_cloud_run_service_name }}
+          frontend_container_image: ${{ parameters.frontend_container_image }}
+          backend_container_image: ${{ parameters.backend_container_image }}
+          database_name: ${{ parameters.database_name }}
+          database_version: ${{ parameters.database_version }}
+          database_tier: ${{ parameters.database_tier }}
 
 
     - id: publish
