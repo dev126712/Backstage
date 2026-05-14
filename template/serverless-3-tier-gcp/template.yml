@@ -106,7 +106,7 @@ spec:
         database_tier:
           title: Database Tier
           type: string
-          description: T"he Database Version ( Default: db-f1-micro )"
+          description: "The Database Version ( Default: db-f1-micro )"
           enum:
             - db-f1-micro
             - db-g1-small
