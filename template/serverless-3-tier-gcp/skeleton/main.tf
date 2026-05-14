@@ -5,13 +5,13 @@ module "cloud_run" {
   subnet = "serverless-app-subnet"
   # cloud run configuration
   cloud_run_region              = "${{ values.cloud_run_region }}"
-  project_id                    ="${{ values.project_id }}"
+  project_id                    = "${{ values.project_id }}"
   google_cloud_run_service_name = "test-service"
 
-  backend_container_image  = "us-central1-docker.pkg.dev/project-test-490416/app-images/backend:latest3"
-  frontend_container_image = "us-central1-docker.pkg.dev/project-test-490416/app-images/frontend:latest3"
+  backend_container_image  = "${{ values.backend_container_image }}"
+  frontend_container_image = "${{ values.frontend_container_image }}"
 
-  database_name = "app-db-instance"
-  database_version = "POSTGRES_15"
-  database_tier = "db-f1-micro" 
+  database_name = "${{ values.database_name }}"
+  database_version = "${{ values.database_version }}"
+  database_tier = "${{ values.database_tier }}" 
 }
