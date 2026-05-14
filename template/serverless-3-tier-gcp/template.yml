@@ -90,13 +90,13 @@ spec:
         database_name:
           title: Database Name
           type: string
-          description: The Database Name ( Default: app-db-instance )
+          description: "The Database Name ( Default: app-db-instance )"
           default: app-db-instance
         
         database_version:
           title: Database Version
           type: string
-          description: The Database Version ( Default: POSTGRES_15 )
+          description: "The Database Version ( Default: POSTGRES_15 )"
           enum:
             - POSTGRES_15
             - POSTGRES_14
@@ -106,7 +106,7 @@ spec:
         database_tier:
           title: Database Tier
           type: string
-          description: The Database Version ( Default: db-f1-micro )
+          description: T"he Database Version ( Default: db-f1-micro )"
           enum:
             - db-f1-micro
             - db-g1-small
