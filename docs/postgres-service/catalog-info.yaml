@@ -5,7 +5,7 @@ metadata:
   description: postgres inventory microservice
   annotations:
     backstage.io/techdocs-ref: url:https://github.com/dev126712/Backstage/tree/main/docs/postgres-service
-    argocd/app-name: postgres-service-prod
+    argocd/app-name: postgres-micro
     backstage.io/kubernetes-id: postgres-service
 spec:
   type: service
