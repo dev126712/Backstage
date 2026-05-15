@@ -147,6 +147,26 @@ catalog:
         - allow: [Component]
 
     - type: url
+      target: https://github.com/dev126712/Backstage/blob/main/docs/redis-service/catalog-info.yaml
+      rules:
+        - allow: [Component]
+
+    - type: url
+      target: https://github.com/dev126712/Backstage/blob/main/docs/notification-service/catalog-info.yaml
+      rules:
+        - allow: [Component]
+
+    - type: url
+      target: https://github.com/dev126712/Backstage/blob/main/docs/postgres-service/catalog-info.yaml
+      rules:
+        - allow: [Component]
+
+    - type: url
+      target: https://github.com/dev126712/Backstage/blob/main/docs/frontend-service/catalog-info.yaml
+      rules:
+        - allow: [Component]
+
+    - type: url
       target: https://github.com/dev126712/Backstage/blob/main/plugins/github-action.yml
       rules:
         - allow: [Component]
