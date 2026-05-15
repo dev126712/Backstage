@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: url:https://github.com/dev126712/Backstage/tree/main/docs/product-service
     backstage.io/kubernetes-id: product-micro
+    backstage.io/kubernetes-namespace: product-ns
 spec:
   type: service
   lifecycle: development
