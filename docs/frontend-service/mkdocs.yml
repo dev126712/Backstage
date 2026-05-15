@@ -1,0 +1,11 @@
+site_name: Frontend Service
+site_description: Frontend  management microservice 
+
+nav:
+  - Overview: index.md
+  - Architecture: architecture.md
+  - API Reference: api.md
+  - Configuration: configuration.md
+
+plugins:
+  - techdocs-core

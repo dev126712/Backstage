@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: frontend-service
+  description: frontend inventory microservice
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/dev126712/Backstage/tree/main/docs/frontend-service
+    argocd/app-name: frontend-service-prod
+    backstage.io/kubernetes-id: frontend-service
+spec:
+  type: service
+  lifecycle: development
+  owner: group:devops
+  system: microservice-app
+  providesApis:
+    - frontend-service
