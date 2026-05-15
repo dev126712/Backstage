@@ -5,6 +5,7 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: url:https://github.com/dev126712/Backstage/tree/main/docs/postgres-service
     backstage.io/kubernetes-id: postgres-service
+    backstage.io/kubernetes-namespace: postgres-ns
 spec:
   type: database
   lifecycle: development
