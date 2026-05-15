@@ -5,7 +5,7 @@ metadata:
   description: notification inventory microservice
   annotations:
     backstage.io/techdocs-ref: url:https://github.com/dev126712/Backstage/tree/main/docs/notification-service
-    argocd/app-name: notification-service-prod
+    argocd/app-name: notification-micro
     backstage.io/kubernetes-id: notification-service
 spec:
   type: service
