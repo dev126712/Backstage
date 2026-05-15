@@ -2,15 +2,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: postgres-service
-  description: postgres inventory microservice
   annotations:
     backstage.io/techdocs-ref: url:https://github.com/dev126712/Backstage/tree/main/docs/postgres-service
-    argocd/app-name: postgres-micro
+    argocd/app-name: 'main/postgres-micro'
     backstage.io/kubernetes-id: postgres-service
 spec:
-  type: service
-  lifecycle: development
-  owner: group:devops
-  system: microservice-app
-  providesApis:
-    - postgres-service
+  type: database
+  lifecycle: production
+  owner: guest
