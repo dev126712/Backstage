@@ -15,7 +15,6 @@ backend.add(import('@backstage/plugin-proxy-backend'));
 
 // scaffolder plugin
 backend.add(import('@backstage/plugin-scaffolder-backend'));
-backend.add(import('@backstage/plugin-scaffolder-backend-module-github'));
 backend.add(
   import('@backstage/plugin-scaffolder-backend-module-notifications'),
 );
@@ -66,6 +65,14 @@ backend.add(import('@backstage/plugin-signals-backend'));
 
 // mcp actions plugin
 backend.add(import('@backstage/plugin-mcp-actions-backend'));
+
+backend.add(import('@backstage/plugin-scaffolder-backend-module-github'));
+
+
+
+// Add the Argo CD backend plugin
+// backend.add(import('@roadiehq/backstage-plugin-argo-cd-backend'));
+
 
 backend.start();
 
